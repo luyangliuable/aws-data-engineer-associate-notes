@@ -58,5 +58,11 @@
       }
     ]
   },
-  "cardEdits": {}
+  "cardEdits": {
+    "ana-aws-008": {
+      "question": "What is Row-Level Permissions (Data Filters) in AWS Lake Formation?",
+      "answer": "Row-level access control allows the application of filters to restrict access to specific rows of data. For instance, you can define filters that grant access to data relevant to a user's role, such as allowing analysts access to specific regions' datasets but not the entire dataset.\n\n![](https://www.pythian.com/hubfs/Imported_Blog_Media/image-43-1.png)\n\n",
+      "editedAt": "2026-03-08T10:57:39.612Z"
+    }
+  }
 }

@@ -1,6 +1,0 @@
-{
-  "rootDirectory": "flashcard-app",
-  "framework": "nextjs",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next"
-}
