@@ -1,0 +1,62 @@
+{
+  "reviews": [
+    {
+      "cardId": "sto-aws-022",
+      "easeFactor": 2.5,
+      "interval": 1,
+      "nextReviewDate": "2026-03-05",
+      "reviewCount": 1
+    },
+    {
+      "cardId": "ana-aws-009",
+      "easeFactor": 2.3,
+      "interval": 1,
+      "nextReviewDate": "2026-03-09",
+      "reviewCount": 1
+    },
+    {
+      "cardId": "com-aws-017",
+      "easeFactor": 2.3,
+      "interval": 1,
+      "nextReviewDate": "2026-03-09",
+      "reviewCount": 1
+    }
+  ],
+  "stats": {
+    "totalReviews": 3,
+    "currentStreak": 1,
+    "lastStudyDate": "2026-03-08",
+    "cardsDueToday": 0
+  },
+  "chats": {
+    "app-aws-018": [
+      {
+        "id": "d1c915f7-906f-4153-b081-99aa28a1215c",
+        "role": "user",
+        "content": "what is aws step functions",
+        "timestamp": "2026-03-08T09:44:57.113Z"
+      },
+      {
+        "id": "6858367c-0700-4366-9859-fad342be7345",
+        "role": "assistant",
+        "content": "Based on the study material provided, **AWS Step Functions** is a **workflow orchestration service** that coordinates multiple AWS services into serverless workflows.\n\n## Key Characteristics\n\n| Aspect | Description |\n|--------|-------------|\n| **Type** | Serverless workflow service |\n| **Primary Function** | Orchestrates and coordinates multiple AWS services |\n| **Visual Design** | Workflows are built visually as state machines |\n| **Execution Model** | Event-driven, can run for up to 1 year |\n\n## Core Components\n\nFrom the study material, Step Functions workflows consist of states that can:\n\n- **Pass** – Pass input to output without doing work\n- **Task** – Execute a unit of work (e.g., Lambda function, ECS task, API Gateway call)\n- **Choice** – Make decisions based on input\n- **Wait** – Delay for a specified time\n- **Parallel** – Execute multiple branches simultaneously\n- **Map** – Iterate over a collection of items\n- **Succeed/End** – Terminate workflow successfully\n\n## Integration with Other Services\n\nThe study material highlights these key integrations:\n\n| Service | Integration Purpose |\n|---------|---------------------|\n| **AWS Lambda** | Execute business logic |\n| **Amazon API Gateway** | Invoke external APIs as part of the workflow |\n| **Amazon ECS/Fargate** | Run containerized tasks |\n| **Amazon SNS/SQS** | Send notifications or messages |\n| **AWS Glue** | Run ETL jobs |\n| **Amazon EventBridge** | Trigger workflows from events |\n\n## Use Cases\n\n- Data processing pipelines\n- Microservices orchestration\n- IT automation\n- ML workflows\n- Order processing systems\n\n## Exam Tip\n\n> Step Functions is specifically designed for **coordination and orchestration** — it doesn't execute business logic itself, but rather **coordinates** other services that do. This distinguishes it from services like Lambda (which executes code) or SQS (which just queues messages).\n\nWould you like me to elaborate on how Step Functions compares to other application integration services like Amazon EventBridge or AWS AppFlow?",
+        "timestamp": "2026-03-08T09:44:57.119Z"
+      }
+    ],
+    "com-aws-016": [
+      {
+        "id": "cfa10fa4-fc55-473c-878f-6e82ea194eed",
+        "role": "user",
+        "content": "what is this card?",
+        "timestamp": "2026-03-08T09:46:00.316Z"
+      },
+      {
+        "id": "2f422449-3ad1-4b29-aac1-13f017c1be7a",
+        "role": "assistant",
+        "content": "This flashcard covers **Step-through Debugging in AWS SAM** (Serverless Application Model).\n\n## What It Means\n\nStep-through debugging is a **local debugging capability** that allows developers to execute their Lambda functions line-by-line during development, rather than relying solely on logs or deploying to AWS to test.\n\n## Key Components\n\n| Aspect | Details |\n|--------|---------|\n| **Tool** | AWS Toolkits (IDE extensions/plugins) |\n| **Supported IDEs** | Visual Studio Code, PyCharm, IntelliJ, AWS Cloud9 |\n| **Capabilities** | Set breakpoints, pause execution, inspect variables, step through code |\n\n## Why It Matters for the DEA Exam\n\n- **Local development workflow**: SAM enables local testing of Lambda functions before cloud deployment\n- **Developer productivity**: Eliminates need to deploy to AWS just to debug code\n- **Integration with `sam local` commands**: Works alongside `sam local invoke` and `sam local start-api`\n\n## Related SAM Commands\n\n```bash\nsam local invoke        # Invoke function locally once\nsam local start-api     # Start local API Gateway emulator\nsam local start-lambda  # Start local Lambda emulator\n```\n\n## Exam Relevance\n\nThis topic typically appears in questions about:\n- **Local development and testing** with SAM\n- **Developer tools** for serverless applications\n- **Debugging strategies** for Lambda functions\n\nThe key distinction is that this is **local debugging** using IDE toolkits, not cloud-based debugging (like CloudWatch Logs or X-Ray tracing, which are used for production troubleshooting).",
+        "timestamp": "2026-03-08T09:46:00.323Z"
+      }
+    ]
+  },
+  "cardEdits": {}
+}
